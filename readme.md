@@ -15,8 +15,8 @@ Allows you to use [Objectus](/acidjazz/objectus) seamlessly in [Laravel 5](http:
 
 # Requirements
 
-* [NodeJS v6.x](https://nodejs.org/en/)
-* [npm v3.x](https://www.npmjs.com/)
+* [PHP v5.5+](https://www.php.net/)
+* [PHP-YAML](http://php.net/manual/en/book.yaml.php)
 
 # Installation
 
