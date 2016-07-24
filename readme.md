@@ -10,6 +10,7 @@ Allows you to use [Objectus](/acidjazz/objectus) seamlessly in [Laravel 5](http:
 [![Latest Stable Version](https://poser.pugx.org/acidjazz/larjectus/v/stable)](https://packagist.org/packages/acidjazz/larjectus)
 [![Latest Unstable Version](https://poser.pugx.org/acidjazz/larjectus/v/unstable)](https://packagist.org/packages/acidjazz/larjectus)
 [![License](https://poser.pugx.org/acidjazz/larjectus/license)](https://packagist.org/packages/acidjazz/larjectus)
+[![Build Status](http://img.shields.io/travis/acidjazz/larjectus.svg)](https://travis-ci.org/acidjazz/larjectus)
 
 > *Note*: currenty in early development
 
