@@ -1,6 +1,6 @@
 [![](media/objectus128.png)](http://github.com/acidjazz/objectus)
 ![](media/and128.png)
-[![](media/laravel128.png)](http://github.com/http://laravel.com)
+[![](media/laravel128.png)](http://laravel.com)
 ![](media/plus128.png)
 [![](media/lumen128.png)](http://lumen.laravel.com)
 
