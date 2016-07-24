@@ -9,7 +9,7 @@ class Objectus {
 
     foreach(scandir($path) as $file) {
 
-      // ignore previosu dir pointers and _ (example dirs/files)
+      // ignore previous directory pointers and _ (example dirs/files)
       if (in_array($file, ['.','..']) || $file{0} == '_') {
         continue;
       }
