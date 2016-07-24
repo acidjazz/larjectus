@@ -4,6 +4,17 @@ namespace larjectus;
 
 class Objectus {
 
+  private static $data = false;
+
+  public static function get($path) {
+
+    if (static::$data == false) {
+      static::$data = self::slurp($path);
+    }
+
+    return static::$data;
+  }
+
 
   public static function slurp($path, $content=[]) {
 
