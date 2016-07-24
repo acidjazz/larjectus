@@ -1,0 +1,20 @@
+{
+  "name": "acidjazz/larjectus",
+  "description": "Adds the power of objectus to Laravel and Lumen",
+  "keywords": ["laravel", "objectus", "lumen"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Olson",
+      "email": "acidjazz@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "larjectus\\": "src/"
+    }
+  }
+}
