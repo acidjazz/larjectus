@@ -26,3 +26,14 @@ Require this package with Composer
 ```bash
 composer require acidjazz/larjectus
 ```
+
+## Laravel
+
+Once Composer has installed or updated your packages you need to register Larjectus with Laravel itself. Open up config/app.php and find the providers key, towards the end of the file, and add 'larjectus\LarjectusServiceProvider', to the end:
+
+```php
+'providers' => [
+  ...
+    larjectus\LarjectusServiceProvider::class,
+],
+```
