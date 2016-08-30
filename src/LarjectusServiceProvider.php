@@ -11,7 +11,7 @@ class LarjectusServiceProvider extends ViewServiceProvider
   public function boot()
   {
     config(\larjectus\Objectus::slurp($this->app->basePath() . '/config/'));
-    view()->share(['config' => current((array) config())]);
+    view()->share(['config' => config()->all()]);
   }
 
   public function register() { }
