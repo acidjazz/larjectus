@@ -4,7 +4,7 @@ php:
   - '7.0'
   - hhvm
 
-sudo: true
+sudo: required
 
 before_script:
   - travis_retry composer self-update
