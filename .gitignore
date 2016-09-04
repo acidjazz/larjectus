@@ -9,11 +9,8 @@ composer.lock
 vendor
 
 ## Build
-build/
+build
 
 # node/bower
 node_modules
 bower_components
-
-# coveralls
-clover.xml

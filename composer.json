@@ -10,10 +10,12 @@
     }
   ],
   "require": {
-    "php": ">=5.6.25"
+    "php": ">=5.6.25",
+    "illuminate/console": "^5.3",
+    "laravel/framework": "^5.3"
   },
   "require-dev": {
-    "satooshi/php-coveralls": "^1.0"
+    "satooshi/php-coveralls": "*"
   },
   "autoload": {
     "psr-4": {

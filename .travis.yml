@@ -11,4 +11,6 @@ before_script:
   - composer install --dev
 
 after_success:
-  - travis_retry php vendor/bin/coveralls
+  - ./vendor/bin/coveralls -v --exclude-no-stmt
+  - bash <(curl -s https://codecov.io/bash)
+    
