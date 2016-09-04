@@ -14,12 +14,15 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 [![Coverage Status](https://coveralls.io/repos/github/acidjazz/larjectus/badge.svg?branch=master)](https://coveralls.io/github/acidjazz/larjectus?branch=master)
 [![codecov](https://codecov.io/gh/acidjazz/larjectus/branch/master/graph/badge.svg)](https://codecov.io/gh/acidjazz/larjectus)
 
+# What this does
+Combines your `.env` and `config/` options with as many YAML and JSON files and directories you want to add inside config/, allows for functionality to share this config information in any langauges your `resources/` or `public/` folders might use 
 
-> *Note*: currenty in early development
+# Why would I wnat this
+Most all of my projects have extended configuration, everything from style guides to site copy, this allows stylus/css and coffeescript/javascript access to this data
 
 # Requirements
 
-* [PHP v5.5+](https://www.php.net/)
+* [PHP v5.6.25+](https://www.php.net/)
 * [PHP-YAML](http://php.net/manual/en/book.yaml.php)
 
 # Installation
@@ -48,3 +51,9 @@ For usage with [Lumen](http://lumen.laravel.com), add the service provider in `b
 ```php
 $app->register(Larjectus\ServiceProvider::class);
 ```
+
+# configuration
+
+## gulpfile.js example(s)
+
+Your gulp task is different from how [Objectus](/acidjazz/objectus) works, here is an example:
