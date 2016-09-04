@@ -56,4 +56,37 @@ $app->register(Larjectus\ServiceProvider::class);
 
 ## gulpfile.js example(s)
 
-Your gulp task is different from how [Objectus](/acidjazz/objectus) works, here is an example:
+Your gulp task is different from how [Objectus](https://github.com/acidjazz/objectus) works, here is an example:
+
+```
+objectify = function() {
+  var config, secure;
+  config = {};
+  secure = ['auth', 'database'];
+  return exec('php artisan larjectus:config', function(error, result, stderr) {
+    var dim, i, len, pubconfig;
+    if (error) {
+      notify(error);
+    }
+    this.config = JSON.parse(result);
+    pubconfig = this.config;
+    for (i = 0, len = secure.length; i < len; i++) {
+      dim = secure[i];
+      delete pubconfig[dim];
+    }
+    return fs.writeFileSync(public/js/config.js', "config = " + JSON.stringify(pubconfig) + ";", 'utf8');
+  });
+};
+
+objectify();
+
+gulp.task('larjectus', objectify);
+
+gulp.task('watch', function() {
+  gulp.watch('config/**/*', ['larjectus']);
+);
+```
+
+Notice i have a `secure` array where i remove config data I do not want exposed, this is _extremely_ improtant
+
+```
