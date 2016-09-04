@@ -9,4 +9,4 @@ sudo: false
 before_script:
   - travis_retry composer self-update
   - travis_retry composer install --no-interaction
-  - pecl install yaml
+  - printf "\n" | pecl install yaml
