@@ -1,5 +1,7 @@
 <?php
 
+include 'vendor/autoload.php';
+
 class Test extends PHPUnit_Framework_TestCase
 {
 

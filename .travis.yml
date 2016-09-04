@@ -5,7 +5,13 @@ php:
 sudo:
   false 
 
+script:
+  - bin/atoum --test-all
+
 before_script:
   - echo "\n" | pecl install yaml
   - echo "extension=yaml.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - composer install --dev
+
+after_success:
+  - travis_retry php vendor/bin/coveralls
