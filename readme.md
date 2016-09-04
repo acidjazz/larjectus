@@ -15,7 +15,8 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 [![codecov](https://codecov.io/gh/acidjazz/larjectus/branch/master/graph/badge.svg)](https://codecov.io/gh/acidjazz/larjectus)
 
 # What this does
-Combines your `.env` and `config/` options with as many YAML and JSON files and directories you want to add inside config/, allows for functionality to share this config information in any langauges your `resources/` or `public/` folders might use 
+* Combines your `.env` and `config/` options with as many YAML and JSON files and directories you want to add inside `config/`
+* Allows for functionality to share this data in any language(s) your `resources/` or `public/` folders might use 
 
 # Why would I wnat this
 Most all of my projects have extended configuration, everything from style guides to site copy, this allows stylus/css and coffeescript/javascript access to this data
