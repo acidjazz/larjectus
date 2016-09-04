@@ -40,9 +40,9 @@ class Objectus {
         if ($parsed == null) {
           self::handler(E_USER_NOTICE, 'Error parsing JSON', $path.$file, 4);
           return false;
-        } else {
-          $content[$name] = $parsed;
-        }
+        } 
+
+        $content[$name] = $parsed;
 
       }
 

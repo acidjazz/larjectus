@@ -2,6 +2,8 @@
 
 include 'vendor/autoload.php';
 
+use Larjectus\Objectus;
+
 class Test extends PHPUnit_Framework_TestCase
 {
 
@@ -43,7 +45,7 @@ class Test extends PHPUnit_Framework_TestCase
 
   public function testOne() {
     include 'vendor/autoload.php';
-    $data = \Larjectus\Objectus::slurp('tests/config/');
+    $data = (new Objectus)->slurp('tests/config/');
     $this->assertEquals($data,$this->expected);
   }
 

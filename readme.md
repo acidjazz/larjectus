@@ -13,6 +13,7 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 [![Build Status](http://img.shields.io/travis/acidjazz/larjectus.svg)](https://travis-ci.org/acidjazz/larjectus)
 [![Coverage Status](https://coveralls.io/repos/github/acidjazz/larjectus/badge.svg?branch=master)](https://coveralls.io/github/acidjazz/larjectus?branch=master)
 [![codecov](https://codecov.io/gh/acidjazz/larjectus/branch/master/graph/badge.svg)](https://codecov.io/gh/acidjazz/larjectus)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0078b53230747e88294f3054f2651d0)](https://www.codacy.com/app/acidjazz/larjectus?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=acidjazz/larjectus&amp;utm_campaign=Badge_Grade)
 
 # What this does
 * Combines your `.env` and `config/` options with as many YAML and JSON files and directories you want to add inside `config/`
