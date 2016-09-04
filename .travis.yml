@@ -4,11 +4,12 @@ php:
   - '7.0'
   - hhvm
 
-sudo: required
+sudo:
+  false
 
 before_script:
-  - travis_retry composer self-update
-  - travis_retry composer install --no-interaction
   - pecl channel-update pecl.php.net
   - (CFLAGS="-O1 -g3 -fno-strict-aliasing"; pecl install yaml < /dev/null &)
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction
     
