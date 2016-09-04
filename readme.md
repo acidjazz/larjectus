@@ -59,6 +59,9 @@ $app->register(Larjectus\ServiceProvider::class);
 Your gulp task is different from how [Objectus](https://github.com/acidjazz/objectus) works, here is an example:
 
 ```javascript
+
+exec = require('child_process').exec;
+
 objectify = function() {
   var config, secure;
   config = {};
@@ -74,7 +77,7 @@ objectify = function() {
       dim = secure[i];
       delete pubconfig[dim];
     }
-    return fs.writeFileSync(public/js/config.js', "config = " + JSON.stringify(pubconfig) + ";", 'utf8');
+    return fs.writeFileSync('public/js/config.js', "config="+JSON.stringify(pubconfig)+";", 'utf8');
   });
 };
 
