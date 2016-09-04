@@ -56,7 +56,7 @@ $app->register(Larjectus\ServiceProvider::class);
 
 ## gulpfile.js example(s)
 
-Your gulp task is different from how [Objectus](https://github.com/acidjazz/objectus) works, here is an example:
+Your gulp task is different from how [Objectus](https://github.com/acidjazz/objectus) works, here is an example of compiling a JSON version of your config for JavaScript access:
 
 ```javascript
 
@@ -90,6 +90,32 @@ gulp.task('watch', function() {
 );
 ```
 
-Notice i have a `secure` array where i remove config data I do not want exposed, this is _extremely_ improtant
+Here is an example of giving config access to [stylus](http://stylus-lang.com/) you would need the sample gulp task above :
+
+```javascript
+
+stylus = require('gulp-stylus');
+
+gulp.task('stylus', function() {
+  return gulp.src('resources/stylus/main.styl')
+    .pipe(stylus({
+      rawDefine: {
+        config: config
+      }
+    }).on('error', notify.onError(function(error) {
+      return {
+        title: 'Stylus error: ' + error.name,
+        message: error.message,
+        sound: 'Pop'
+      };
+    })))
+  .pipe(gulp.dest('public/css/'))
+  .pipe(sync.stream());
+}
+
+
+
 
 ```
+
+Notice i have a `secure` array where i remove config data I do not want exposed, this is _extremely_ improtant
