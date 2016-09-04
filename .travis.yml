@@ -10,3 +10,5 @@ before_script:
   - travis_retry composer self-update
   - travis_retry composer install --no-interaction
   - printf "\n" | pecl install yaml
+  - echo "extension=yaml.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    
