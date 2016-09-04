@@ -13,6 +13,13 @@ class ServiceProvider extends ViewServiceProvider
     view()->share(['config' => config()->all()]);
   }
 
-  public function register() { }
+  public function register()
+  { 
+
+    $this->commands([
+      'Larjectus\Console\Commands\Config',
+    ]);
+  
+  }
 
 }

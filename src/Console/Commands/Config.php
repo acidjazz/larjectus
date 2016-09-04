@@ -11,14 +11,14 @@ class Config extends Command
      *
      * @var string
      */
-    protected $signature = 'config';
+    protected $signature = 'larjectus:config';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Return the current config in JSON';
+    protected $description = 'Return the current stacked config in JSON';
 
     /**
      * Execute the console command.
@@ -27,6 +27,6 @@ class Config extends Command
      */
     public function handle()
     {
-        echo json_encode(config()->all());
+        $this->line(json_encode(config()->all(), JSON_PRETTY_PRINT));
     }
 }
