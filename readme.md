@@ -58,7 +58,7 @@ $app->register(Larjectus\ServiceProvider::class);
 
 Your gulp task is different from how [Objectus](https://github.com/acidjazz/objectus) works, here is an example:
 
-```
+```javascript
 objectify = function() {
   var config, secure;
   config = {};
