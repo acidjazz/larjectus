@@ -4,6 +4,11 @@ php:
   - '7.0'
   - hhvm
 
+sudo: false
+
 before_script:
   - travis_retry composer self-update
   - travis_retry composer install --no-interaction
+
+script:
+  - vendor/bin/phpunit --verbose $PHPUNIT_FLAGS
