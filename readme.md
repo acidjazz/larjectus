@@ -18,7 +18,7 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 * Combines your `.env` and `config/` options with as many YAML and JSON files and directories you want to add inside `config/`
 * Allows for functionality to share this data in any language(s) your `resources/` or `public/` folders might use 
 
-# Why would I wnat this
+# Why would I want this
 Most all of my projects have extended configuration, everything from style guides to site copy, this allows stylus/css and coffeescript/javascript access to this data
 
 # Requirements
