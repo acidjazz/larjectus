@@ -13,8 +13,8 @@
 >
     <testsuites>
         <testsuite name="all">
-            <directory>test/</directory>
-            <exclude>test/Test.php</exclude>
+            <directory>tests/</directory>
+            <exclude>tests/Test.php</exclude>
         </testsuite>
     </testsuites>
 </phpunit>

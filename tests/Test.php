@@ -41,7 +41,7 @@ class Test extends PHPUnit_Framework_TestCase
 
   public function testOne() {
     include 'vendor/autoload.php';
-    $data = \larjectus\Objectus::slurp('test/dat/');
+    $data = \Larjectus\Objectus::slurp('test/config/');
     $this->assertEquals($data,$this->expected);
   }
 

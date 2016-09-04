@@ -29,12 +29,12 @@ composer require acidjazz/larjectus
 
 ## Laravel
 
-Once Composer has installed or updated your packages you need to register Larjectus with Laravel itself. Open up config/app.php and find the providers key, towards the end of the file, and add 'larjectus\LarjectusServiceProvider', to the end:
+Once Composer has installed or updated your packages you need to register Larjectus with Laravel itself. Open up config/app.php and find the providers key, towards the end of the file, and add 'Larjectus\ServiceProvider', to the end:
 
 ```php
 'providers' => [
   ...
-    larjectus\LarjectusServiceProvider::class,
+    Larjectus\ServiceProvider::class,
 ],
 ```
 
@@ -43,5 +43,5 @@ Once Composer has installed or updated your packages you need to register Larjec
 For usage with [Lumen](http://lumen.laravel.com), add the service provider in `bootstrap/app.php`. 
 
 ```php
-$app->register(larjectus\LarjectusServiceProvider::class);
+$app->register(Larjectus\ServiceProvider::class);
 ```

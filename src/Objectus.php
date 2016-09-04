@@ -1,6 +1,6 @@
 <?php
 
-namespace larjectus;
+namespace Larjectus;
 
 class Objectus {
 

@@ -1,20 +1,18 @@
 <?php
 
-namespace larjectus;
+namespace Larjectus;
 
 use Illuminate\View\ViewServiceProvider;
 
-
-class LarjectusServiceProvider extends ViewServiceProvider
+class ServiceProvider extends ViewServiceProvider
 {
 
   public function boot()
   {
-    config(\larjectus\Objectus::slurp($this->app->basePath() . '/config/'));
+    config(Objectus::slurp($this->app->basePath() . '/config/'));
     view()->share(['config' => config()->all()]);
   }
 
   public function register() { }
 
 }
-
