@@ -9,7 +9,7 @@ set -e
 PHP_INI=$(php --ini | grep Loaded | awk '{print $NF}')
 
 # Download and unpack latest tarball
-curl -o yaml.tgz http://pecl.php.net/get/yaml
+curl -o yaml.tgz http://pecl.php.net/get/yaml-1.2.0.tgz
 tar xzf yaml.tgz
 cd yaml-*
 
