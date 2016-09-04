@@ -7,8 +7,7 @@ php:
 sudo:
   false 
 before_script:
-  - pecl channel-update pecl.php.net
-  - (CFLAGS="-O1 -g3 -fno-strict-aliasing"; pecl install yaml < /dev/null &)
+  - ./tests/yamml-install.sh
   - travis_retry composer self-update
   - travis_retry composer install --no-interaction
     
