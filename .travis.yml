@@ -8,6 +8,6 @@ sudo:
   false 
 
 before_script:
-  - pecl -f install yaml
+  - echo "\n" | pecl install yaml
   - echo "extension=yaml.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
   - composer install --dev
