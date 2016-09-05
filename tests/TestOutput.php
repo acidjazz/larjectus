@@ -5,44 +5,40 @@ use Larjectus\Objectus;
 class TestOutput extends PHPUnit_Framework_TestCase
 {
 
-  private $expected = array (
-    'colors' =>
-    array (
+  private $expected = [
+    'test' =>  [
+      'json' =>  'a test for json'
+    ],
+    'colors' => [
       'blue1' => '#0000FF',
       'red1' => '#FF0000',
-    ),
-    'config' =>
-    array (
+    ],
+    'config' => [
       'url' => 'http://www.example.url/',
-      'meta' =>
-      array (
+      'meta' => [
         'title' => 'website title',
         'description' => 'website description',
-      ),
-    ),
-    'fonts' =>
-    array (
+      ],
+    ],
+    'fonts' => [
       'copy' => '20px Tahoma',
       'h1' => '40px Tahoma',
       'h2' => '30px Tahoma',
-    ),
-    'subdir' =>
-    array (
-      'content' =>
-      array (
+    ],
+    'subdir' => [
+      'content' => [
         'title' => 'content title',
-        'data' =>
-        array (
+        'data' => [
           0 => 'test',
           1 => 'one',
           2 => 'two',
-        ),
-      ),
-    ),
-  );
+        ],
+      ],
+    ],
+  ];
 
   public function testConfig() {
-    $data = (new Objectus)->slurp('tests/config/');
+    $data = (new Objectus)->slurp('src/config/');
     $this->assertEquals($data,$this->expected);
   }
 
