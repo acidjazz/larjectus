@@ -26,7 +26,7 @@ class TestApp extends \PHPUnit_Framework_TestCase
     $stub = new StubTestCase();
     $app = $stub->createApplication();
 
-    $config =(new Objectus)->slurp('src/config/');
+    $config =(new Objectus)->slurp('tests/config/');
     config($config);
 
     \Artisan::call('larjectus:config');

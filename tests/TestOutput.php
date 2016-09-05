@@ -38,8 +38,20 @@ class TestOutput extends PHPUnit_Framework_TestCase
   ];
 
   public function testConfig() {
-    $data = (new Objectus)->slurp('src/config/');
+    $data = (new Objectus)->slurp('tests/config/');
     $this->assertEquals($data,$this->expected);
   }
 
+
+  public function testBrokenJson() {
+    $this->expectException(ErrorException::class);
+    $data = (new Objectus)->slurp('tests/brokenJSON/');
+  }
+
+  public function testBrokenYaml() {
+    $this->expectException(ErrorException::class);
+    $data = (new Objectus)->slurp('tests/brokenYAML/');
+  }
+
 }
+

@@ -38,7 +38,7 @@ class Objectus {
         $parsed = json_decode(file_get_contents($path.$file), true);
 
         if ($parsed == null) {
-          self::handler(E_USER_NOTICE, 'Error parsing JSON', $path.$file, 4);
+          trigger_error('Error parsing JSON : '.$path.$file, E_USER_NOTICE);
           return false;
         } 
 
