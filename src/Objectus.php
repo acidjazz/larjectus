@@ -4,23 +4,10 @@ namespace Larjectus;
 
 class Objectus {
 
-  private static $data = false;
-
-  public static function get($path) {
-
-    if (static::$data == false) {
-      static::$data = self::slurp($path);
-    }
-
-    return static::$data;
-  }
-
-
   public static function slurp($path, $content=[]) {
 
     foreach(scandir($path) as $file) {
 
-      // ignore previous directory pointers and _ (example dirs/files)
       if (in_array($file, ['.','..']) || $file{0} == '_') {
         continue;
       }
@@ -38,8 +25,7 @@ class Objectus {
         $parsed = json_decode(file_get_contents($path.$file), true);
 
         if ($parsed == null) {
-          trigger_error('Error parsing JSON : '.$path.$file, E_USER_NOTICE);
-          return false;
+          return trigger_error('Error parsing JSON : '.$path.$file, E_USER_NOTICE);
         } 
 
         $content[$name] = $parsed;
