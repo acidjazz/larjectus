@@ -28,5 +28,6 @@ class Config extends Command
     public function handle()
     {
         $this->line(json_encode(config()->all(), JSON_PRETTY_PRINT));
+        //return json_encode(config()->all(), JSON_PRETTY_PRINT);
     }
 }
