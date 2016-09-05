@@ -8,7 +8,6 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 
 [![Total Downloads](https://poser.pugx.org/acidjazz/larjectus/downloads)](https://packagist.org/packages/acidjazz/larjectus)
 [![Latest Stable Version](https://poser.pugx.org/acidjazz/larjectus/v/stable)](https://packagist.org/packages/acidjazz/larjectus)
-[![Latest Unstable Version](https://poser.pugx.org/acidjazz/larjectus/v/unstable)](https://packagist.org/packages/acidjazz/larjectus)
 [![License](https://poser.pugx.org/acidjazz/larjectus/license)](https://packagist.org/packages/acidjazz/larjectus)
 [![Build Status](http://img.shields.io/travis/acidjazz/larjectus.svg)](https://travis-ci.org/acidjazz/larjectus)
 [![Dependency Status](https://www.gemnasium.com/badges/github.com/acidjazz/larjectus.svg)](https://www.gemnasium.com/github.com/acidjazz/larjectus)
