@@ -16,8 +16,6 @@ class TestApp extends \PHPUnit_Framework_TestCase
     $this->assertInstanceOf('\Illuminate\Config\Repository', $app['config']);
     $this->assertTrue($app->isBooted(), true);
     $this->assertArrayhasKey('Larjectus\ServiceProvider', $app->getLoadedProviders());
-
-  
   }
 
   public function testConsoleCommand()
@@ -43,5 +41,4 @@ class StubTestCase extends \Orchestra\Testbench\TestCase
   {
     return ['Larjectus\ServiceProvider'];
   }
-
 }

@@ -45,12 +45,12 @@ class TestOutput extends PHPUnit_Framework_TestCase
 
   public function testBrokenJson() {
     $this->expectException(ErrorException::class);
-    $data = (new Objectus)->slurp('tests/brokenJSON/');
+    (new Objectus)->slurp('tests/brokenJSON/');
   }
 
   public function testBrokenYaml() {
     $this->expectException(ErrorException::class);
-    $data = (new Objectus)->slurp('tests/brokenYAML/');
+    (new Objectus)->slurp('tests/brokenYAML/');
   }
 
 }
