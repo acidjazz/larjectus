@@ -1,13 +1,11 @@
 <?php
 
-include 'vendor/autoload.php';
-
 use Larjectus\Objectus;
 
-class Test extends PHPUnit_Framework_TestCase
+class TestOutput extends PHPUnit_Framework_TestCase
 {
 
-  public $expected = array (
+  private $expected = array (
     'colors' =>
     array (
       'blue1' => '#0000FF',
@@ -43,8 +41,7 @@ class Test extends PHPUnit_Framework_TestCase
     ),
   );
 
-  public function testOne() {
-    include 'vendor/autoload.php';
+  public function testConfig() {
     $data = (new Objectus)->slurp('tests/config/');
     $this->assertEquals($data,$this->expected);
   }

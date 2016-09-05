@@ -11,6 +11,7 @@ Allows you to use [Objectus](http://github.com/acidjazz/objectus) seamlessly in 
 [![Latest Unstable Version](https://poser.pugx.org/acidjazz/larjectus/v/unstable)](https://packagist.org/packages/acidjazz/larjectus)
 [![License](https://poser.pugx.org/acidjazz/larjectus/license)](https://packagist.org/packages/acidjazz/larjectus)
 [![Build Status](http://img.shields.io/travis/acidjazz/larjectus.svg)](https://travis-ci.org/acidjazz/larjectus)
+[![Dependency Status](https://www.gemnasium.com/badges/github.com/acidjazz/larjectus.svg)](https://www.gemnasium.com/github.com/acidjazz/larjectus)
 [![Coverage Status](https://coveralls.io/repos/github/acidjazz/larjectus/badge.svg?branch=master)](https://coveralls.io/github/acidjazz/larjectus?branch=master)
 [![codecov](https://codecov.io/gh/acidjazz/larjectus/branch/master/graph/badge.svg)](https://codecov.io/gh/acidjazz/larjectus)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e0078b53230747e88294f3054f2651d0)](https://www.codacy.com/app/acidjazz/larjectus?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=acidjazz/larjectus&amp;utm_campaign=Badge_Grade)
