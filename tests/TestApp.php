@@ -31,7 +31,7 @@ class TestApp extends \PHPUnit_Framework_TestCase
 
     \Artisan::call('larjectus:config');
     $output = json_decode(\Artisan::output(), true);
-    $expected = ['test' => ['json' => 'a test for json']];
+    $expected = ['json' => 'a test for json'];
     $this->assertEquals($output['test'],$expected);
 
   }
