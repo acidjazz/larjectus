@@ -2,7 +2,7 @@
 
 use Larjectus\Objectus;
 
-class TestOutput extends PHPUnit_Framework_TestCase
+class TestOutput extends PHPUnit\Framework\TestCase
 {
 
   private $expected = [

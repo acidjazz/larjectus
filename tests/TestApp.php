@@ -2,7 +2,7 @@
 
 use Larjectus\Objectus;
 
-class TestApp extends \PHPUnit_Framework_TestCase
+class TestApp extends \PHPUnit\Framework\TestCase
 {
   public function testCreateApplicationMethod()
   {
