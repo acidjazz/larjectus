@@ -6,8 +6,9 @@ sudo:
   false 
 
 before_script:
-  - printf "\n" | pecl install yaml
+  - printf "\n" | pecl install yaml-2.0.0
   - composer install 
+  - php -i|grep yaml
 
 
 after_success:
