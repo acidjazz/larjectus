@@ -15,7 +15,7 @@
   },
   "require-dev": {
     "satooshi/php-coveralls": "^1.0",
-    "orchestra/testbench": "^3.3"
+    "orchestra/testbench": "^3.4.5"
   },
   "autoload": {
     "psr-4": {
