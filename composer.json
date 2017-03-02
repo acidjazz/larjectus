@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "php": ">=7.0.0"
+    "php": ">=7.0.0",
+    "phpunit/phpunit": "^5.7"
   },
   "require-dev": {
     "satooshi/php-coveralls": "^1.0",
