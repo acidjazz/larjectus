@@ -6,7 +6,7 @@ sudo:
   false 
 
 before_script:
-  - printf "\n" | pecl install yaml
+  - yes '' | pecl install yaml
   - composer install 
 
 
