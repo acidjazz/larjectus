@@ -6,7 +6,9 @@ sudo:
   false 
 
 before_script:
-  - composer install --dev
+  - pecl install yaml
+  - composer install 
+
 
 after_success:
   - ./vendor/bin/coveralls -v --exclude-no-stmt
