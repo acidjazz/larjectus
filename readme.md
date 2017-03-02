@@ -24,7 +24,7 @@ Most all of my projects have extended configuration, everything from style guide
 
 # Requirements
 
-* [PHP v5.6.25+](https://www.php.net/)
+* [PHP v7.0.0+](https://www.php.net/)
 * [PHP-YAML](http://php.net/manual/en/book.yaml.php)
 
 # Installation
