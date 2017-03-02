@@ -8,6 +8,7 @@ sudo:
 before_script:
   - printf "\n" | pecl install yaml-2.0.0
   - composer install 
+  - phpunit --version
 
 
 after_success:
